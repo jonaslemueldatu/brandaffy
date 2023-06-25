@@ -18,7 +18,7 @@ function Affiliateregistrationform() {
 
     const registerAffiliate = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:3000/api/affiliate/register', {
+        axios.post('https://brandaffy-api.onrender.com/api/affiliate/register', {
             first_name: firstname,
             last_name: lastname,
             email: email,

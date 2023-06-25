@@ -15,7 +15,7 @@ function Affiliateloginform() {
     const loginAffiliate = async (event) => {
         event.preventDefault();
         try {
-            const res = await axios.post('http://localhost:3000/api/affiliate/login', {
+            const res = await axios.post('https://brandaffy-api.onrender.com/api/affiliate/login', {
                 email: email,
                 password: password
             })
