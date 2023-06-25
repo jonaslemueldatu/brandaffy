@@ -2,7 +2,7 @@ import React from 'react';
 
 function Brandlandingpage() {
     return (
-        <div>Brand Landing Page</div>
+        <div>Brand Landing Pages</div>
     )
 }
 
