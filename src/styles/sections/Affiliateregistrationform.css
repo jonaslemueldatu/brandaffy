@@ -1,0 +1,103 @@
+.affilate-landing-page-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.affiliate-landingpage-logo-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+}
+
+.affiliate-landingpage-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+.affilaite-landingpage-header {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.affiliate-landingpage-image-container {
+    background-color: blue;
+    width: 50vw;
+}
+
+.affiliate-landingpage-logo {
+    aspect-ratio: 1;
+    height: 90px;
+    cursor: pointer;
+}
+
+.affiliate-landingpage-two-fields {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.affiliate-landingpage-single-field {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.affiliate-landingpage-two-fields .affiliate-landingpage-field {
+    width: 50%;
+}
+
+.affiliate-landingpage-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.affiliate-landingpage-field input {
+    background: #fff;
+    color: #0a0627;
+    padding: 15px 35px 15px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.affiliate-landingpage-image-container {
+    background-image: url(https://www.firstx.ai/_next/static/image/app/assets/features/signBg.675d480ad90f88191444d84bf86afbab.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#affilaite-landingpage-platform.affiliate-landingpage-single-field {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+.affilaite-landingpage-signup-cta {
+    background-color: #6c5dd3;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    padding: 0.75rem 0.25rem;
+    margin: 2rem 1rem;
+}
+
+.affilaite-landingpage-login-redirect {
+    margin: 2rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .affiliate-landingpage-image-container {
+        display: none;
+    }
+    .affiliate-landingpage-form-container {
+        width: 100%;
+    }
+}
