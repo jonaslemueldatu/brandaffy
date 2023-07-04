@@ -20,7 +20,9 @@ function App() {
         <Route path="/register" element={<Brandregistrationpage />} />
         <Route path="/affiliate/register" element={<Affiliateregistrationpage />} />
         <Route path="/affiliate/login" element={<Affiliateloginpage />} />
-        <Route path="/dashboard/" element={<RequireAuth loginPath='/affiliate/login'><Dashboardlanding /></RequireAuth>}/>
+        {/* <Route path="/dashboard/" element={<RequireAuth loginPath='/affiliate/login'><Dashboardlanding /></RequireAuth>}/> */}
+        <Route path="/dashboard/" element={<Dashboardlanding />}/>
+
       </Routes>
     </div >
   );

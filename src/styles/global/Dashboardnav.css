@@ -1,0 +1,9 @@
+.dashboard-nav-section-container {
+    background-color: gray;
+    max-width: 170px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
