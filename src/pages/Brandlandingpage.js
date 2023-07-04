@@ -7,7 +7,7 @@ function Brandlandingpage() {
 
     const [provider, setProvider] = useState('')
     const [profile, setProfile] = useState(null)
-    const REDIRECT_URI = "window.location.href";
+    const REDIRECT_URI = window.location.href;
 
     const onLoginStart = useCallback(() => {
         alert('login start')
@@ -26,7 +26,7 @@ function Brandlandingpage() {
             isOnlyGetToken
             client_id={'6342324939180545' || ''}
             client_secret={'97c5aae4b141556dc129320719313aea' || ''}
-            redirect_uri={REDIRECT_URI}
+            redirect_uri={'https://brandaffy.onrender.com/'}
             onLoginStart={onLoginStart}
             onResolve={({ provider, data }) => {
               setProvider(provider)
