@@ -5,7 +5,7 @@ import Affiliateregistrationpage from "./pages/Affiliateregistrationpage"
 import Brandlandingpage from "./pages/Brandlandingpage"
 import Brandregistrationpage from "./pages/Brandregistrationpage"
 import Affiliateloginpage from './pages/Affiliateloginpage';
-import Dashboardlanding from './pages/Dashboardlanding';
+import Dashboardaffiliateprofile from './pages/Dashboardaffiliateprofile';
 import { RequireAuth } from 'react-auth-kit';
 
 
@@ -20,9 +20,7 @@ function App() {
         <Route path="/register" element={<Brandregistrationpage />} />
         <Route path="/affiliate/register" element={<Affiliateregistrationpage />} />
         <Route path="/affiliate/login" element={<Affiliateloginpage />} />
-        {/* <Route path="/dashboard/" element={<RequireAuth loginPath='/affiliate/login'><Dashboardlanding /></RequireAuth>}/> */}
-        <Route path="/dashboard/" element={<Dashboardlanding />}/>
-
+        <Route path="/dashboard/affiliate/profile" element={<RequireAuth loginPath='/affiliate/login'><Dashboardaffiliateprofile /></RequireAuth>}/>
       </Routes>
     </div >
   );

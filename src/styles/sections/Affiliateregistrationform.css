@@ -86,11 +86,16 @@ input[type='checkbox'] {
     color: white;
     cursor: pointer;
     padding: 0.75rem 0.25rem;
-    margin: 2rem 1rem;
+    margin: 1rem;
 }
 
 .affilaite-landingpage-login-redirect {
     margin: 2rem 1rem;
+}
+
+.affiliate-landingpage-error {
+    margin: 1rem 1rem 0 1rem;
+    color: red;
 }
 
 @media screen and (max-width: 1024px) {

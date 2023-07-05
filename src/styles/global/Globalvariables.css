@@ -1,0 +1,53 @@
+/* Text */
+
+.global-input-fields-title {}
+
+.global-input-field-value {
+    padding: 15px 35px 15px 20px;
+
+}
+
+.global-button-one {
+    color: rgba(63, 140, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 19px;
+    border-color: rgba(63,140,255,1);
+    border: 1px solid;
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.global-button-two {
+    color: rgb(108, 93, 211);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 19px;
+    border-color: rgb(108, 93, 211);
+    border: 1px solid;
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.global-button-three {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 19px;
+    border-color: rgb(108, 93, 211);
+    border: 1px solid;
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    background-color: rgba(63,140,255,1);
+    cursor: pointer;
+    margin: 10px;
+}

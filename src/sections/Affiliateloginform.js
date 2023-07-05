@@ -9,57 +9,52 @@ function Affiliateloginform() {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [error, setError] = useState("")
     const navigate = useNavigate()
     const signIn = useSignIn()
 
     const loginAffiliate = async (event) => {
         event.preventDefault();
-        try {
-            const res = await axios.post(`${process.env.REACT_APP_SERVER_URL}/api/affiliate/login`, {
-                email: email,
-                password: password
-            })
-
-            console.log(res)
-
-            signIn({
-                token: res.data.token,
-                expiresIn: 3600,
-                tokenType: "Bearer",
-                authState: res.data.user_profile,
-            })
-
-            if (res.status == 200) {
-                navigate('/dashboard')
+        axios.post('http://localhost:3000/api/affiliate/login', {
+            email: email,
+            password: password
+        }).then((res) => {
+            if (res.data.error) {
+                setError(res.data.error)
+            } else {
+                signIn({
+                    token: res.data.token,
+                    expiresIn: 3600,
+                    tokenType: "Bearer",
+                    authState: res.data.user_profile,
+                })
+                navigate('/dashboard/affiliate/profile')
             }
-
-        } catch (err) {
-            console.log(err)
-        }
-
+        }).catch(err => console.log(err))
     }
 
     return (
         <div className='affilate-landing-page-container'>
             <Link className='affiliate-landingpage-logo-link' to='/affiliate'>
-                <img Lin className='affiliate-landingpage-logo' src="https://www.firstx.ai/images/logo.svg" alt='Brandaffy logo' />
+                <img className='affiliate-landingpage-logo' src="https://www.firstx.ai/images/logo.svg" alt='Brandaffy logo' />
             </Link>
             <form onSubmit={loginAffiliate} className='affiliate-landingpage-form-container'>
                 <div className='affiliate-landingpage-form'>
                     <h2 className='affilaite-landingpage-header'>Hi, Welcome to Brandaffy!</h2>
                     <div className='affiliate-landingpage-single-field'>
                         <div className='affiliate-landingpage-field'>
-                            <label for='affiliate-register-email'>Email:</label>
-                            <input onChange={(e) => { setEmail(e.target.value) }} type='text' id='affiliate-register-email'></input>
+                            <label htmlFor='affiliate-register-email'>Email:</label>
+                            <input required onFocus={() => {setError("")}} onChange={(e) => { setEmail(e.target.value) }} type='text' id='affiliate-register-email'></input>
                         </div>
                     </div>
                     <div className='affiliate-landingpage-single-field'>
                         <div className='affiliate-landingpage-field'>
-                            <label for='affiliate-register-lastname'>Password:</label>
-                            <input onChange={(e) => { setPassword(e.target.value) }} type='password' id='affiliate-register-password'></input>
+                            <label htmlFor='affiliate-register-lastname'>Password:</label>
+                            <input required onChange={(e) => { setPassword(e.target.value) }} onFocus={() => {setError("")}} type='password' id='affiliate-register-password'></input>
                         </div>
                     </div>
                 </div>
+                <p className="affiliate-landingpage-error">{error}</p>
                 <button type='submit' className='affilaite-landingpage-signup-cta'>Login</button>
                 <p className='affilaite-landingpage-login-redirect'>Not registered yet? <Link to='/affiliate/register'>Create an Account</Link></p>
             </form>

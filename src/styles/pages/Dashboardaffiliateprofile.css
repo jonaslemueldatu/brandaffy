@@ -1,0 +1,8 @@
+.dashboard-landing-page-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f8faff
+}
+.dasboad-landing-page-section-container {
+    flex: 1;
+}
