@@ -32,22 +32,13 @@ function Affiliateregistrationform() {
             if (res.data.error) {
                 setError(res.data.error)
             } else {
-                axios.post('http://localhost:3000/api/affiliate/login', {
-                    email: email,
-                    password: password
-                }).then((res) => {
-                    if (res.data.error) {
-                        setError(res.data.error)
-                    } else {
-                        signIn({
-                            token: res.data.token,
-                            expiresIn: 3600,
-                            tokenType: "Bearer",
-                            authState: res.data.user_profile,
-                        })
-                        navigate('/dashboard/affiliate/profile')
-                    }
-                }).catch(err => console.log(err))
+                signIn({
+                    token: res.data.token,
+                    expiresIn: 3600,
+                    tokenType: "Bearer",
+                    authState: res.data.user_profile,
+                })
+                navigate('/dashboard/affiliate/profile')
             }
         }).catch(err => console.log(err))
     }
@@ -71,54 +62,54 @@ function Affiliateregistrationform() {
 
 
     return (
-        <div className='affilate-landing-page-container'>
+        <div className='affiliate-landingpage-container'>
             <Link className='affiliate-landingpage-logo-link' to='/affiliate'>
                 <img className='affiliate-landingpage-logo' src="https://www.firstx.ai/images/logo.svg" alt='Brandaffy logo' />
             </Link>
             <form onSubmit={registerAffiliate} className='affiliate-landingpage-form-container'>
                 <div className='affiliate-landingpage-form'>
-                    <h2 className='affilaite-landingpage-header'>Hi, Welcome to Brandaffy!</h2>
+                    <h2 className='affiliate-landingpage-header'>Hi, Welcome to Brandaffy!</h2>
                     <div className='affiliate-landingpage-two-fields'>
                         <div className='affiliate-landingpage-field'>
-                            <label htmFor='affiliate-register-firstname'>First Name:</label>
+                            <label htmlFor='affiliate-register-firstname'>First Name:</label>
                             <input required onChange={(e) => { setFirstname(e.target.value) }} type='text' id='affiliate-register-firstname'></input>
                         </div>
                         <div className='affiliate-landingpage-field'>
-                            <label htmFor='affiliate-register-lastname'>Last Name:</label>
+                            <label htmlFor='affiliate-register-lastname'>Last Name:</label>
                             <input required onChange={(e) => { setLastname(e.target.value) }} type='text' id='affiliate-register-lastname'></input>
                         </div>
                     </div>
                     <div className='affiliate-landingpage-single-field'>
                         <div className='affiliate-landingpage-field'>
-                            <label htmFor='affiliate-register-email'>Email:</label>
+                            <label htmlFor='affiliate-register-email'>Email:</label>
                             <input required onFocus={() => setError("")} onChange={(e) => { setEmail(e.target.value) }} type='text' id='affiliate-register-email'></input>
                         </div>
                     </div>
                     <div className='affiliate-landingpage-single-field'>
                         <div className='affiliate-landingpage-field'>
-                            <label htmFor='affiliate-register-lastname'>Password:</label>
+                            <label htmlFor='affiliate-register-lastname'>Password:</label>
                             <input required onChange={(e) => { setPassword(e.target.value) }} type='password' id='affiliate-register-password'></input>
                         </div>
                     </div>
-                    <div id='affilaite-landingpage-platform' className='affiliate-landingpage-single-field'>
+                    <div id='affiliate-landingpage-platform' className='affiliate-landingpage-single-field'>
                         <label >Platform:</label>
                         <div>
                             <input onClick={(e) => setTiktokc(!tiktokc)} type='checkbox' id='affiliate-register-tiktok' value={'tiktok'}></input>
-                            <label htmFor='affiliate-register-tiktok'>Tiktok</label>
+                            <label htmlFor='affiliate-register-tiktok'>Tiktok</label>
                         </div>
                         <div>
                             <input onClick={(e) => setInstagramc(!instagramc)} type='checkbox' id='affiliate-register-instagram'></input>
-                            <label htmFor='affiliate-register-instagram'>Instagram</label>
+                            <label htmlFor='affiliate-register-instagram'>Instagram</label>
                         </div>
                         <div>
                             <input onClick={(e) => setFacebookc(!facebookc)} type='checkbox' id='affiliate-register-facebook'></input>
-                            <label htmFor='affiliate-register-facebook'>Facebook</label>
+                            <label htmlFor='affiliate-register-facebook'>Facebook</label>
                         </div>
                     </div>
                 </div>
                 <p className="affiliate-landingpage-error">{error}</p>
-                <button type='submit' className='affilaite-landingpage-signup-cta'>Sign up</button>
-                <p className='affilaite-landingpage-login-redirect'>Already have an account? <Link to='/affiliate/login'>Login</Link></p>
+                <button type='submit' className='affiliate-landingpage-signup-cta'>Sign up</button>
+                <p className='affiliate-landingpage-login-redirect'>Already have an account? <Link to='/affiliate/login'>Login</Link></p>
             </form>
             <div className='affiliate-landingpage-image-container'>
             </div>

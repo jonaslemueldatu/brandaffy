@@ -1,4 +1,4 @@
-.affilate-landing-page-container {
+.affiliate-landingpage-container {
     position: relative;
     display: flex;
     height: 100vh;
@@ -18,7 +18,7 @@
     width: 50vw;
 }
 
-.affilaite-landingpage-header {
+.affiliate-landingpage-header {
     margin: 1rem;
     font-size: 3rem;
 }
@@ -58,7 +58,8 @@
 .affiliate-landingpage-field input {
     background: #fff;
     color: #0a0627;
-    padding: 15px 35px 15px 20px;
+    padding: 10px;
+    margin: 10px 0;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -69,7 +70,7 @@
     background-position: center center;
 }
 
-#affilaite-landingpage-platform.affiliate-landingpage-single-field {
+#affiliate-landingpage-platform.affiliate-landingpage-single-field {
     display: flex;
     justify-content: space-between;
     margin: 2rem 1rem;
@@ -79,7 +80,7 @@ input[type='checkbox'] {
     cursor: pointer;
 }
 
-.affilaite-landingpage-signup-cta {
+.affiliate-landingpage-signup-cta {
     background-color: #6c5dd3;
     border-radius: 0.5rem;
     border-width: 1px;
@@ -89,7 +90,7 @@ input[type='checkbox'] {
     margin: 1rem;
 }
 
-.affilaite-landingpage-login-redirect {
+.affiliate-landingpage-login-redirect {
     margin: 2rem 1rem;
 }
 

@@ -34,13 +34,13 @@ function Affiliateloginform() {
     }
 
     return (
-        <div className='affilate-landing-page-container'>
+        <div className='affiliate-landingpage-container'>
             <Link className='affiliate-landingpage-logo-link' to='/affiliate'>
                 <img className='affiliate-landingpage-logo' src="https://www.firstx.ai/images/logo.svg" alt='Brandaffy logo' />
             </Link>
             <form onSubmit={loginAffiliate} className='affiliate-landingpage-form-container'>
                 <div className='affiliate-landingpage-form'>
-                    <h2 className='affilaite-landingpage-header'>Hi, Welcome to Brandaffy!</h2>
+                    <h2 className='affiliate-landingpage-header'>Hi, Welcome to Brandaffy!</h2>
                     <div className='affiliate-landingpage-single-field'>
                         <div className='affiliate-landingpage-field'>
                             <label htmlFor='affiliate-register-email'>Email:</label>
@@ -55,8 +55,8 @@ function Affiliateloginform() {
                     </div>
                 </div>
                 <p className="affiliate-landingpage-error">{error}</p>
-                <button type='submit' className='affilaite-landingpage-signup-cta'>Login</button>
-                <p className='affilaite-landingpage-login-redirect'>Not registered yet? <Link to='/affiliate/register'>Create an Account</Link></p>
+                <button type='submit' className='affiliate-landingpage-signup-cta'>Login</button>
+                <p className='affiliate-landingpage-login-redirect'>Not registered yet? <Link to='/affiliate/register'>Create an Account</Link></p>
             </form>
             <div className='affiliate-landingpage-image-container'>
             </div>

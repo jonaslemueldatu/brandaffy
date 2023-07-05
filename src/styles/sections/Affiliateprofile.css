@@ -12,7 +12,7 @@
     padding: 15px;
 }
 
-.affilaiteprofile-image-container {
+.affiliateprofile-image-container {
     display: flex;
     align-items: center;
 }
@@ -28,10 +28,69 @@
     flex: 1
 }
 
-.affiliateprofile-landingpage-form-container {
-
-}
 .affiliateprofile-button-container {
     display: flex;
     justify-content: flex-end;
+}
+
+.affiliate-landingpage-two-fields > div > input {
+    border-color: rgba(209,213,219,1);
+    border-width: 1px;
+    font-size: 16px;
+}
+
+.affiliate-landingpage-two-fields > div > label {
+    font-weight: 600;
+    color: rgb(156, 163, 175)
+}
+
+.affiliateprofile-field-value {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.affiliateprofile-button-one {
+    color: rgba(63, 140, 255, 1);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 19px;
+    border-color: rgba(63,140,255,1);
+    border: 1px solid;
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.affiliateprofile-button-two {
+    color: rgb(108, 93, 211);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 19px;
+    border-color: rgb(108, 93, 211);
+    border: 1px solid;
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.affiliateprofile-button-three {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 19px;
+    border-color: rgb(108, 93, 211);
+    border: 1px solid;
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    background-color: rgba(63,140,255,1);
+    cursor: pointer;
+    margin: 10px;
 }
