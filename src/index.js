@@ -11,7 +11,7 @@ root.render(
     <AuthProvider
       authType={'cookie'}
       authName={'_auth'}
-      cookieDomain={window.location.hostname}
+      cookieDomain={process.env.REACT_APP_ROUTE}
       cookieSecure={false}>
       <BrowserRouter>
         <App />
