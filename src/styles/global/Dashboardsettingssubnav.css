@@ -1,0 +1,24 @@
+.settingssubnav-container {
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(143,149,178,.15);
+    margin: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    min-width: 280px;
+    max-width: 280px;
+}
+
+.settingssubnav-container > a {
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-left: 4px solid rgb(229, 231, 235)
+}
+
+.settingssubnav-container > a.active {
+    border-left: 4px solid rgba(55,164,255,1);
+    color: rgba(55,164,255,1) !important;
+}

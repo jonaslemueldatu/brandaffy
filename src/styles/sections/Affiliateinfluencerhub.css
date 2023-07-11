@@ -1,0 +1,58 @@
+.affiliateinfluencerhub-info-container {
+    border-radius: 0.5rem;
+    margin: 10px;
+    background-color: white;
+    border-color: rgba(229,231,235,1);
+    box-shadow: rgba(0, 73, 198, 0.15) 0px 2.9008px 11.6032px;
+    flex: 1;
+    overflow: scroll
+}
+
+.affiliateinfluencerhub-table {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+.affiliateinfluencerhub-table > thead {
+    font-weight: 600;
+    color: rgb(156, 163, 175);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.affiliateinfluencerhub-table > thead > tr {
+    border-color: rgba(229,231,235,1);
+    border-bottom-width: 1px;
+    border-top-left-radius: 0.5rem;
+}
+
+.affiliateinfluencerhub-table > thead > tr > th {
+    padding: 0.75rem;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.affiliateinfluencerhub-table > tbody > tr > td {
+    padding: 0.75rem;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.affiliateinfluencerhub-table > thead > tr, .affiliateinfluencerhub-table > tbody > tr {
+    border-bottom: 0.5px solid rgba(229,231,235,1);
+    cursor: pointer;
+    height: 5rem;
+}
+
+.affiliateinfluencerhub-table > tbody > tr > td > img {
+    height: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.affiliateinfluencerhub-table > tbody > tr > td > span {
+    margin: 0 0 0 5px;
+}

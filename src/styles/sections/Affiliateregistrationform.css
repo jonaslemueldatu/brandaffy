@@ -5,16 +5,13 @@
 }
 
 .affiliate-landingpage-logo-link {
-    position: absolute;
-    top: 0;
-    left: 0;
     margin: 1rem;
+    width: fit-content;
 }
 
 .affiliate-landingpage-form-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50vw;
 }
 
@@ -23,14 +20,9 @@
     font-size: 3rem;
 }
 
-.affiliate-landingpage-image-container {
-    background-color: blue;
-    width: 50vw;
-}
-
 .affiliate-landingpage-logo {
     aspect-ratio: 1;
-    height: 90px;
+    height: 200px;
     cursor: pointer;
 }
 
@@ -68,6 +60,7 @@
     background-image: url(https://www.firstx.ai/_next/static/image/app/assets/features/signBg.675d480ad90f88191444d84bf86afbab.svg);
     background-size: cover;
     background-position: center center;
+    width: 50vw;
 }
 
 #affiliate-landingpage-platform.affiliate-landingpage-single-field {

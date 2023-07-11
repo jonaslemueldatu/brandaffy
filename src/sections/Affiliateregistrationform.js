@@ -9,6 +9,7 @@ function Affiliateregistrationform() {
 
     const signIn = useSignIn()
 
+    const [brandlogo] = useState("https://brandaffy.s3.ap-southeast-2.amazonaws.com/website+assets/Brandaffy+Logo.png")
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
     const [email, setEmail] = useState("")
@@ -22,7 +23,7 @@ function Affiliateregistrationform() {
 
     const registerAffiliate = (event) => {
         event.preventDefault();
-        axios.post(`http://localhost:3000/api/affiliate/register`, {
+        axios.post(`${process.env.REACT_APP_ROUTE}/api/affiliate/register`, {
             first_name: firstname,
             last_name: lastname,
             email: email,
@@ -45,17 +46,17 @@ function Affiliateregistrationform() {
 
 
     useEffect(() => {
-        const handleFacebookc = facebookc ? setPlatform(plat => [...plat, 'Facebook']) : setPlatform(platform => {
+        facebookc ? setPlatform(plat => [...plat, 'Facebook']) : setPlatform(platform => {
             return platform.filter(plat => plat !== 'Facebook')
         })
     }, [facebookc]);
     useEffect(() => {
-        const handleTiktokc = tiktokc ? setPlatform(plat => [...plat, 'Tiktok']) : setPlatform(platform => {
+        tiktokc ? setPlatform(plat => [...plat, 'Tiktok']) : setPlatform(platform => {
             return platform.filter(plat => plat !== 'Tiktok')
         })
     }, [tiktokc]);
     useEffect(() => {
-        const handleInstagramc = instagramc ? setPlatform(plat => [...plat, 'Instagram']) : setPlatform(platform => {
+        instagramc ? setPlatform(plat => [...plat, 'Instagram']) : setPlatform(platform => {
             return platform.filter(plat => plat !== 'Instagram')
         })
     }, [instagramc]);
@@ -63,12 +64,12 @@ function Affiliateregistrationform() {
 
     return (
         <div className='affiliate-landingpage-container'>
-            <Link className='affiliate-landingpage-logo-link' to='/affiliate'>
-                <img className='affiliate-landingpage-logo' src="https://www.firstx.ai/images/logo.svg" alt='Brandaffy logo' />
-            </Link>
             <form onSubmit={registerAffiliate} className='affiliate-landingpage-form-container'>
+                <Link className='affiliate-landingpage-logo-link' to='/affiliate'>
+                    <img className='affiliate-landingpage-logo' src={brandlogo} alt='Brandaffy logo' />
+                </Link>
                 <div className='affiliate-landingpage-form'>
-                    <h2 className='affiliate-landingpage-header'>Hi, Welcome to Brandaffy!</h2>
+                    <div className='affiliate-landingpage-header'>Hi, Welcome to Brandaffy!</div>
                     <div className='affiliate-landingpage-two-fields'>
                         <div className='affiliate-landingpage-field'>
                             <label htmlFor='affiliate-register-firstname'>First Name:</label>

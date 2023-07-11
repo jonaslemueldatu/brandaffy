@@ -1,0 +1,92 @@
+.brand-landingpage-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.brand-landingpage-logo-link {
+    margin: 1rem;
+    width: fit-content;
+}
+
+.brand-landingpage-logo {
+    aspect-ratio: 1;
+    height: 200px;
+    cursor: pointer;
+}
+
+.brand-landingpage-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.brand-landingpage-single-field {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.brand-landingpage-two-fields {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.brand-landingpage-two-fields .brand-landingpage-field {
+    width: 50%;
+}
+
+.brand-landingpage-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.brand-landingpage-field input {
+    background: #fff;
+    color: #0a0627;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.brand-landingpage-header {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.brand-landingpage-image-container {
+    background-image: url(https://www.firstx.ai/_next/static/image/app/assets/features/signBg.675d480ad90f88191444d84bf86afbab.svg);
+    background-size: cover;
+    background-position: center center;
+    width: 50vw;
+}
+
+.brand-landingpage-error {
+    margin: 1rem 1rem 0 1rem;
+    color: red;
+}
+
+.brand-landingpage-signup-cta {
+    background-color: #6c5dd3;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    padding: 0.75rem 0.25rem;
+    margin: 1rem;
+}
+
+.brand-landingpage-login-redirect {
+    margin: 2rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .brand-landingpage-image-container {
+        display: none;
+    }
+    .brand-landingpage-form-container {
+        width: 100%;
+    }
+}

@@ -1,8 +1,9 @@
 import React from 'react';
+import Brandregistrationform from '../sections/Brandregistrationform'
 
 function Brandregistrationpage() {
     return (
-        <div>Brand Registration Page</div>
+        <Brandregistrationform />
     )
 }
 

@@ -1,0 +1,62 @@
+
+.brandprofile-info-container {
+    border-radius: 0.5rem;
+    margin: 10px;
+    background-color: white;
+    border-color: rgba(229,231,235,1);
+    box-shadow: rgba(0, 73, 198, 0.15) 0px 2.9008px 11.6032px;
+}
+
+.brandprofile-info-block {
+    padding: 15px;
+}
+
+.brandprofile-landingpage-form-container {
+    display: flex;
+    padding: 15px;
+}
+
+.brandprofile-image-container {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+.brandprofile-info-image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 50px;
+}
+
+.brandprofile-info-data {
+    flex: 1
+}
+
+.brandprofile-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand-landingpage-two-fields > div > input {
+    border-color: rgba(209,213,219,1);
+    border-width: 1px;
+    font-size: 16px;
+}
+
+.brand-landingpage-two-fields > div > label {
+    font-weight: 600;
+    color: rgb(156, 163, 175)
+}
+
+.brandprofile-field-value {
+    padding: 10.5px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.brandprofile-image-container > label {
+    cursor: pointer;
+}

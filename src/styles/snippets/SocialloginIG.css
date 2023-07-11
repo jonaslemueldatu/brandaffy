@@ -1,0 +1,10 @@
+.socialloginig-container {
+    border-radius: 0.5rem;
+    margin: 10px;
+    background-color: white;
+    border-color: rgba(229,231,235,1);
+    box-shadow: rgba(0, 73, 198, 0.15) 0px 2.9008px 11.6032px;
+    flex: 1;
+    max-width: 33%;
+    aspect-ratio: 1;
+}
