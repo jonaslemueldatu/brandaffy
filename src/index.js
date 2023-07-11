@@ -8,11 +8,10 @@ import { AuthProvider } from "react-auth-kit"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AuthProvider
-      authType={'cookie'}
+    <AuthProvider authType={'cookie'}
       authName={'_auth'}
-      cookieDomain={process.env.REACT_APP_ROUTE}
-      cookieSecure={false}>
+      cookieDomain={window.location.hostname}
+      cookieSecure={window.location.protocol === "https:"}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

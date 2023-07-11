@@ -1,4 +1,4 @@
-import './App.css';
+simport './App.css';
 import { Route, Routes } from "react-router-dom";
 import Affiliatelandingpage from "./pages/Affiliatelandingpage"
 import Affiliateregistrationpage from "./pages/Affiliateregistrationpage"
