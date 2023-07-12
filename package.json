@@ -10,6 +10,7 @@
     "axios": "^1.4.0",
     "kit": "^0.1.2",
     "react": "^18.2.0",
+    "react-auth-kit": "^2.12.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.13.0",
     "react-scripts": "^2.1.3",

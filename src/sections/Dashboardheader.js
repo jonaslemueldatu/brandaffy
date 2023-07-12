@@ -1,6 +1,6 @@
 //accepts the following props: 
 //1. Title - Title to be displayed
-
+import React from 'react';
 import '../styles/sections/Dashboardheader.css'
 
 function Dashboardheader(props) {
